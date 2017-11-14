@@ -1,0 +1,20 @@
+# Server settings ：后面必须有空格
+server:
+    port: 9000
+    address: localhost 
+spring: 
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.56.101:3306/boot?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
+    username: root
+    password: 111111
+
+
+  jpa:
+    hibernate: 
+      ddl-auto: none
+    show-sql: true
+
+  jackson: 
+    serialization: 
+      indent_output: true
