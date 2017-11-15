@@ -1,4 +1,4 @@
-package com.je.demo.entity;
+package com.je.demo.api.user.entity;
 
 import java.io.Serializable;
 
@@ -14,7 +14,8 @@ import javax.persistence.Table;
 public class User implements Serializable {
 	@Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
-    private String id;
+    @Column(name = "id")
+    private Long id;
 
     @Column(name = "username")
     private String username;
@@ -24,12 +25,12 @@ public class User implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    public String getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(String id) {
-        this.id = id == null ? null : id.trim();
+    public void setId(Long id) {
+        this.id = id == null ? null : id;
     }
 
     public String getUsername() {

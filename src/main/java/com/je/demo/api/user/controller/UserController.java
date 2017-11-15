@@ -1,4 +1,4 @@
-package com.je.demo.controller;
+package com.je.demo.api.user.controller;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.je.demo.entity.User;
-import com.je.demo.service.UserService;
+import com.je.demo.api.user.entity.User;
+import com.je.demo.api.user.service.UserService;
 
 
 

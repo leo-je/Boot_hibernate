@@ -1,4 +1,4 @@
-package com.je.demo.service.impl;
+package com.je.demo.api.user.service.impl;
 
 import java.util.List;
 
@@ -6,9 +6,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.je.demo.dao.UserRepository;
-import com.je.demo.entity.User;
-import com.je.demo.service.UserService;
+import com.je.demo.api.user.dao.UserRepository;
+import com.je.demo.api.user.entity.User;
+import com.je.demo.api.user.service.UserService;
 
 
 @Service

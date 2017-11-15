@@ -1,8 +1,8 @@
-package com.je.demo.service;
+package com.je.demo.api.user.service;
 
 import java.util.List;
 
-import com.je.demo.entity.User;
+import com.je.demo.api.user.entity.User;
 
 
 public interface UserService {
