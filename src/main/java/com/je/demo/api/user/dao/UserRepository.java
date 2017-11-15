@@ -26,4 +26,6 @@ public interface UserRepository extends CrudRepository<User, Long> {
 	 * @return
 	 */
 	User findByUsername(String name);
+	
+	User findOderByUsername(String name);
 }

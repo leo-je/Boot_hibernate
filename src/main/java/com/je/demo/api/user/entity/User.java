@@ -1,13 +1,18 @@
 package com.je.demo.api.user.entity;
 
 import java.io.Serializable;
+import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
+
+import com.je.demo.api.order.entity.Order;
 
 @Entity
 @Table(name = "t_user")
@@ -22,8 +27,21 @@ public class User implements Serializable {
 
     @Column(name = "password")
     private String password;
+    
+    @OneToMany(fetch = FetchType.LAZY,mappedBy = "user")
+    private List<Order> orders;
+    
+    
 
-    private static final long serialVersionUID = 1L;
+    public List<Order> getOrders() {
+		return orders;
+	}
+
+	public void setOrders(List<Order> orders) {
+		this.orders = orders;
+	}
+
+	private static final long serialVersionUID = 1L;
 
     public Long getId() {
         return id;

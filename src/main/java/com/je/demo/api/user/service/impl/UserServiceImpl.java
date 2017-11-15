@@ -21,7 +21,7 @@ public class UserServiceImpl
 
 	@Override
 	public User findOneByUsername(String username) {
-		User u = userDao.findByUsername(username);
+		User u = userDao.findOderByUsername(username);
 		return u;
 	}
 
